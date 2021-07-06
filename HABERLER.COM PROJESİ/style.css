@@ -1,0 +1,306 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 5000px;
+}
+
+
+.clear{
+    clear: both;
+}
+.container{       /* container yapısı sitenin belirli bir iç kısımda oluşturulmasını sağlar 
+                   yani belirli kenar boşlukları içerisinde içerik girilir */
+    width:80%;
+    margin: 0 auto;
+    background-color:
+    
+}
+
+.headergroup{
+    background-color: #e1e1e1;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+}
+.headergroup .logo{
+    float: left;
+    width: 25%;
+    text-align:center;
+    
+}
+.headergroup .menu{
+    float:left;
+
+}
+
+.headergroup .menu ul{
+    float:left;
+   
+}
+
+
+.headergroup .menu li{
+    float: left;
+    list-style-type: none;
+    margin-right: 20px;
+    padding: 20px; 
+
+}
+
+
+
+.headergroup .menu li a{
+    color:black;
+    text-decoration: none;
+   
+}
+
+.search{
+    display: flex;
+    padding-left: 60px;
+    
+}
+
+.arama{
+    display: flex;
+    float: left;
+    padding-left: 0px; 
+ 
+}
+.parallax{
+    background-image: url('slider.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 350px;
+}
+
+.boxgroup{
+ float: left;
+    display: flex;
+    flex-direction: row;    /* Esnek yön satırı oluşturma  */
+    flex-wrap: wrap; 
+    margin-top: 20px;
+}
+
+.boxgroup .box{
+    float: left;
+   width: 22%;
+   padding: 0px 15px;
+   margin-left: 0;
+   margin-right: 0;
+   text-align: center;
+  
+}
+
+.boxgroup .box img{
+    float: left;
+    width: 100%;
+    height: auto;
+
+ }
+
+ .boxgroup .box a{
+    float: left;
+  color:black;
+  text-decoration:none;
+  font-weight: bold;
+  
+ }
+
+ .groupbox2{
+     float: left;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     margin-top: 20px;
+ }
+
+ .groupbox2 .box2{
+     float: left;
+     width:22%;
+  padding: 0 15px;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  
+ }
+
+ .groupbox2 .box2 img{
+     float:left;
+     width: 100%;
+     height:auto;
+ }
+ .groupbox2 .box2 a{
+     float:left;
+     color:black;
+     text-decoration: none;
+     font-weight: bold;
+ }
+
+ .media{
+         
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  
+ }
+ .media .mkutu{
+    float: left;
+    width:40%;
+ padding: 0 50px;
+ text-align: center;
+ }
+ .media .mkutu img{
+    float:left;
+    width: 100%;
+    height:auto;
+ }
+ .media .mkutu a{
+    float:left;
+ color:black;
+ text-decoration: none;
+ font-weight: bold;
+
+ }   
+
+     @media screen and (max-width:797px) {
+       body{
+           height: 5000px;
+       }
+ 
+       .media{
+         
+        float: left;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      background-color: aqua;
+     }
+     .media .mkutu{
+        float: left;
+        width:40%;
+     padding: 0 50px;
+     text-align: center;
+     background-color: aqua;
+     }
+     .media .mkutu img{
+        float:left;
+        width: 100%;
+        height:auto;
+        background-color: aqua;
+     }
+     .media .mkutu a{
+        float:left;
+     color:black;
+     text-decoration:none;
+     
+     font-weight: bold;
+       align-items:center;
+     }   
+
+
+    }  
+  
+      @media (min-width: 798px) and (max-width:1024px) {
+        body{
+            height: 5000px;
+        }
+  
+        .media{
+         
+            float: left;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            background-color:blue;
+          
+         }
+         .media .mkutu{
+            float: left;
+            width:40%;
+         padding: 0 50px;
+         text-align: center;
+         background-color:blue;
+         }
+         .media .mkutu img{
+            float:left;
+            width: 100%;
+            height:auto;
+            background-color:blue;
+         }
+         .media .mkutu a{
+            float:left;
+         color:black;
+         text-decoration: none;
+         font-weight: bold;
+        
+         }   
+      
+ 
+ 
+        }
+      
+      
+
+footer{
+    width: 100%;
+    height: 350px;
+    position: relative;
+  background-color: #e1e1e1;
+  float: left;
+  margin-top: 20px;
+  
+}
+
+
+footer div#footercontainer {
+    width:1200px;
+    margin:auto;
+  position: relative;
+}
+ 
+footer div#footercontainer div.footerbox {
+    float:left;
+    width:400px;
+    position:relative;
+    text-align: center;
+    padding-top: 50px;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+footer div#footercontainer div.footerbox h2 {
+    line-height: 30px;
+    font-size:30px;
+    border-bottom: 2px solid  red;
+    width: 350px;
+    padding: 0 15px 0 15px;
+
+}
+
+footer div#footercontainer div.footerbox p{
+   line-height: 30px;
+
+}
+
+
+footer div#footercontainer div.footerbox a img{
+   padding-top: 10px;
+}
+
+footer div#footercontainer div.footerbox b{
+ line-height: 300px;
+ 
+}
